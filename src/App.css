@@ -20,6 +20,11 @@
   margin: 30px;
 }
 
+img{
+  width:220px;
+  height:326px;
+}
+
 .flex-grid-thirds {
   display: flex;
   justify-content: space-between;
