@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import tvshow1 from './images/breakingbad.jpg';
 import tvshow2 from './images/deathnote.jpg';
 import tvshow3 from './images/blackmirror.jpg';

@@ -49,7 +49,7 @@ text-align: center;
 }
 
 .overlay:hover .title-panel {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .title {
@@ -73,6 +73,10 @@ padding: 16px 32px;
     display: block;
   }
   .flex-grid-thirds .col {
+    margin: auto 0;
+    width: 100%;
+  }
+  .flex-grid-thirds img {
     margin: auto 0;
     width: 100%;
   }
