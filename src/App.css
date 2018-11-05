@@ -39,7 +39,7 @@ img {
   top:440px;
   color:white;
   opacity: 1;
-  transform: translateY(-20px);
+  transform: translateY(-50px);
 }
 
 .flex-grid-thirds {
@@ -58,7 +58,7 @@ img {
   .flex-grid-thirds img {
     margin: auto 0;
     width: 100%;
-    height:100%;
+    height: 500px;
   }
 }
 
