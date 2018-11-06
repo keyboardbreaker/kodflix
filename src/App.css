@@ -9,6 +9,7 @@
 .flex-grid {
   display: flex;
   background-color:black;
+  flex-flow:wrap;
 }
 
 .col {
@@ -16,6 +17,7 @@
   margin: auto 0;
   position: relative;
   overflow: hidden;
+  flex-basis: 400px;
 }
 
 img {
@@ -45,6 +47,7 @@ img {
 .flex-grid-thirds {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 520px) {
