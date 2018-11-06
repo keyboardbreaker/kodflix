@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Cover} from './Cover.js';
-import tvshow1 from "./images/breakingbad.jpg";
+import tvshow1 from "./images/hillhouse.jpg";
 import tvshow2 from "./images/deathnote.jpg";
 import tvshow3 from "./images/blackmirror.jpg";
 import tvshow4 from "./images/got.jpg";
@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <div class="flex-grid-thirds flex-grid">
-          <Cover name="Breaking Bad" tvshow = {tvshow1} />
+          <Cover name="The Haunting of Hill House" tvshow = {tvshow1} />
           <Cover name="Death Note" tvshow = {tvshow2} />
           <Cover name="Black Mirror" tvshow = {tvshow3}/>
         </div>
