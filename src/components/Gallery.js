@@ -10,12 +10,12 @@ import {Cover} from './Cover.js';
 function Gallery(props) {
     return (
         <div class="flex-grid">
-            <Cover name="The Haunting of Hill House" tvshow = {tvshow1} />
-            <Cover name="Death Note" tvshow = {tvshow2} />
-            <Cover name="Black Mirror" tvshow = {tvshow3}/>
-            <Cover name="Game Of Thrones" tvshow = {tvshow4}/>
-            <Cover name="The Wire" tvshow = {tvshow5} />
-            <Cover name="The Walking Dead" tvshow = {tvshow6} />
+            <Cover name="The Haunting of Hill House" tvshow = {tvshow1} showid="Haunting-Hill-House" />
+            <Cover name="Death Note" tvshow = {tvshow2} showid="Death-Note"/>
+            <Cover name="Black Mirror" tvshow = {tvshow3} showid="Black-Mirror"/>
+            <Cover name="Game Of Thrones" tvshow = {tvshow4} showid="Game-Of-Thrones"/>
+            <Cover name="The Wire" tvshow = {tvshow5} showid="The-Wire"/>
+            <Cover name="The Walking Dead" tvshow = {tvshow6} showid="The-Walking-Dead"/>
         </div>
       );
 }
