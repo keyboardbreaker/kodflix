@@ -41,7 +41,6 @@ img {
 
 .col:hover .overlay{
   top:440px;
-  /* color:white; */
   opacity: 1;
   transform: translateY(-50px);
 }
