@@ -14,7 +14,8 @@ class App extends Component {
               <Route path='/:details' component={Details} />
             </Switch>
           </BrowserRouter>
-      </div>);
+      </div>
+    );
   }
 }
 
