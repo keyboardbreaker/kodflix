@@ -1,8 +1,8 @@
 import React from "react";
-import {Gallery} from '../components/Gallery';
+import { Gallery } from '../components/Gallery';
 
 const Home = () => {
     return(<Gallery />);
 };
 
-export {Home};
+export { Home };

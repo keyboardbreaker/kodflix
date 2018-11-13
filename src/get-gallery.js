@@ -10,12 +10,12 @@ import tvshow6 from "./images/thewalkingdead.png";
 
 export default function getGallery() {
     return [
-        {name: 'The Haunting of Hill House', tvshow: tvshow1, showid:'Haunting-Hill-House'},
-        {name: 'Death Note', tvshow: tvshow2, showid:'Death-Note'},
-        {name: 'Black Mirror', tvshow: tvshow3, showid:'Black-Mirror'},
-        {name: 'Game Of Thrones', tvshow: tvshow4, showid:'Game-Of-Thrones'},
-        {name: 'The Wire', tvshow: tvshow5, showid:'The-Wire'},
-        {name: 'The Walking Dead', tvshow: tvshow6, showid:'The-Walking-Dead'},
+        { name: 'The Haunting of Hill House', tvshow: tvshow1, showid:'Haunting-Hill-House' },
+        { name: 'Death Note', tvshow: tvshow2, showid:'Death-Note' },
+        { name: 'Black Mirror', tvshow: tvshow3, showid:'Black-Mirror' },
+        { name: 'Game Of Thrones', tvshow: tvshow4, showid:'Game-Of-Thrones' },
+        { name: 'The Wire', tvshow: tvshow5, showid:'The-Wire' },
+        { name: 'The Walking Dead', tvshow: tvshow6, showid:'The-Walking-Dead' },
     ];
 }
 

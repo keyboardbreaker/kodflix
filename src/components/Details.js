@@ -23,7 +23,7 @@ class Details extends React.Component {
   render() {
     return (
       <div className="Details">
-        <h2>{this.state.currentShow.name}</h2> 
+        <h2>{ this.state.currentShow.name }</h2> 
         <Link to="/">Return back to Media Gallery.</Link>
       </div>
     );
