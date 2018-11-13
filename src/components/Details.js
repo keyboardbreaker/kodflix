@@ -7,27 +7,23 @@ class Details extends React.Component {
     super();
     //Save the Id of the current TV show
     this.state = {
-        currentShowID: '',
-        currentShowName: ''
+        currentShow: {}
     }
   }
 
   componentDidMount = () => {
     this.setState({
-        currentShowID: GetGallery().find((tvshow) => {
+        currentShow: GetGallery().find((tvshow) => {
             return tvshow.showid === this.props.match.params.details;
-        }).showid,
-        currentShowName: GetGallery().find((tvshow) => {
-            return tvshow.showid === this.props.match.params.details;
-        }).name
+        })
+
     })
   };
 
   render() {
     return (
-        
       <div className="Details">
-        <h2>{this.state.currentShowName}</h2> 
+        <h2>{this.state.currentShow.name}</h2> 
         <Link to="/">Return back to Media Gallery.</Link>
       </div>
     );
