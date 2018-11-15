@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect} from "react-router-dom";
 import GetGallery from '../get-gallery';
 
 class Details extends React.Component {
@@ -7,20 +7,32 @@ class Details extends React.Component {
     super();
     //Save the Id of the current TV show
     this.state = {
-        currentShow: {}
+        currentShow: {},
+        toNotFound: false
     }
   }
 
   componentDidMount = () => {
-    this.setState({
-        currentShow: GetGallery().find((tvshow) => {
-            return tvshow.showid === this.props.match.params.details;
-        })
-
-    })
+    let findShow = GetGallery().find((tvshow) => {
+      return tvshow.showid === this.props.match.params.details;
+    });
+    
+    if(!findShow){
+      this.setState({ 
+        toNotFound: true,  
+      })
+    }
+    else{
+      this.setState({ 
+        currentShow: findShow,  
+      })
+    }
   };
 
   render() {
+    if(this.state.toNotFound === true) {
+      return <Redirect to='/NotFound' />
+    }
     return (
       <div className="Details">
         <h2>{ this.state.currentShow.name }</h2> 
