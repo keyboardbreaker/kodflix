@@ -1,0 +1,39 @@
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+#root{
+    height:100%
+}
+
+.App{
+    height:100%
+}
+
+.Details{
+    background-color: black;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-flow:wrap;
+}
+
+.column{
+    flex: 1;
+    color: white;
+    border: solid rgb(43, 43, 43) 1px;
+    flex-basis: 300px;
+    text-align: left;
+    padding: 20px;
+}
+
+h2{
+    color: white;
+    margin: 0;
+}
