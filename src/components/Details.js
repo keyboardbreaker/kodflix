@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Redirect} from "react-router-dom";
 import GetGallery from '../get-gallery';
+import "./Details.css";
 
 class Details extends React.Component {
   constructor() {
@@ -33,12 +34,18 @@ class Details extends React.Component {
     if(this.state.toNotFound === true) {
       return <Redirect to='/NotFound' />
     }
-    return (
-      <div className="Details">
-        <h2>{ this.state.currentShow.name }</h2> 
-        <Link to="/">Return back to Media Gallery.</Link>
-      </div>
-    );
+    else{
+      return (
+        <div className="Details">
+          <h2>{ this.state.currentShow.name }</h2>
+          <Link to="/">Return back to Media Gallery.</Link>
+          <div className="container">
+            <div className="column"><img src={this.state.currentShow.tvshow} /></div>
+            <div className="column"><p>{this.state.currentShow.synopsis}</p></div>
+          </div>
+        </div>
+      );
+    }
   }
 }
 
