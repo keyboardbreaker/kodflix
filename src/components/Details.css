@@ -28,9 +28,10 @@ body{
     flex: 1;
     color: white;
     border: solid rgb(43, 43, 43) 1px;
-    flex-basis: 300px;
+    flex-basis: 450px;
     text-align: left;
     padding: 20px;
+    background-color: black;
 }
 
 h2{
