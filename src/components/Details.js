@@ -40,8 +40,8 @@ class Details extends React.Component {
           <h2>{ this.state.currentShow.name }</h2>
           <Link to="/">Return back to Media Gallery.</Link>
           <div className="container">
-            <div className="column"><img src={this.state.currentShow.tvshow} /></div>
             <div className="column"><p>{this.state.currentShow.synopsis}</p></div>
+            <div className="column"><img src={this.state.currentShow.tvshow} alt="detailsCover"/></div>
           </div>
         </div>
       );
