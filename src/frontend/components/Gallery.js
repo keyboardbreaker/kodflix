@@ -1,7 +1,7 @@
 import React from "react";
 import getGallery from '../get-gallery.js';
 import { Cover } from './Cover.js';
-// import tvshow1 from "./images/hillhouse.jpg";
+import tvshow1 from "../images/hillhouse.jpg";
 // import tvshow2 from "./images/deathnote.jpg";
 // import tvshow3 from "./images/blackmirror.jpg";
 // import tvshow4 from "./images/got.jpg";
@@ -19,9 +19,10 @@ class Gallery extends React.Component {
     componentDidMount = () => {
         fetch(getGallery())
         .then(res => res.json())
-        .then(TVShows => {
-          this.setState({TVShows});
-        })
+        .then(shows => {
+            console.log(shows);
+            this.setState({shows: shows});
+        });
 
     }
 

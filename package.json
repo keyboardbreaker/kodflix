@@ -27,7 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-
+    
   },
   "proxy": "http://localhost:3001"
 }
