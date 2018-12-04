@@ -18,12 +18,11 @@ class Gallery extends React.Component {
     
     componentDidMount = () => {
         fetch(getGallery())
-        .then(res => res.json())
-        .then(shows => {
-            console.log(shows);
-            this.setState({shows: shows});
-        });
-
+          .then(res => res.json())
+          .then(shows => {
+              console.log(shows);
+              this.setState({shows: shows});
+          });
     }
 
     render() {
