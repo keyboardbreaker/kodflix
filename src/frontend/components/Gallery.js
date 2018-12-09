@@ -14,7 +14,7 @@ class Gallery extends React.Component {
         fetch(getGallery())
           .then(res => res.json())
           .then(shows => {
-              console.log(shows);
+            //   console.log(shows);
               this.setState({shows: shows});
           });
     }
