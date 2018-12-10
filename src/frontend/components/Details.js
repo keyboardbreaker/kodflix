@@ -21,7 +21,7 @@ class Details extends React.Component {
           console.log(tvshow);
           return tvshow.showid === this.props.match.params.details;
         });
-        this.setState({ currentShow: findShow });
+        //this.setState({ currentShow: findShow });
         if (!findShow) {
           this.setState({
             toNotFound: true
@@ -31,7 +31,8 @@ class Details extends React.Component {
         else if (Object.keys(this.state.currentShow).length === 0) {
           //show exists
           this.setState({
-            toNotFound: false
+            toNotFound: false,
+            currentShow: findShow
           });
         }
       });
@@ -43,7 +44,11 @@ class Details extends React.Component {
     } else {
       return (
         <div className="Details">
-          <div>EMPTY DIV</div>
+          <h2>{ this.state.currentShow.name }</h2>
+          <Link to="/">Return back to Media Gallery.</Link>
+          <div className="container">
+            <div className="column"><p>{this.state.currentShow.synopsis}</p></div>
+          </div>
         </div>
       );
     }
